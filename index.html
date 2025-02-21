@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junaid Khan - Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.scroll-smooth { scroll-behavior: smooth; }
+.skill-bar { transition: width 1s ease-in-out; }
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#3B82F6',
+secondary: '#10B981'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-white font-['Inter'] text-gray-800">
+<nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16">
+<div class="flex items-center">
+<a href="#" class="text-2xl font-['Pacifico'] text-primary">Junaid Khan</a>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#home" class="hover:text-primary transition-colors">Home</a>
+<a href="#about" class="hover:text-primary transition-colors">About</a>
+<a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+<a href="#achievements" class="hover:text-primary transition-colors">Achievements</a>
+<a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+<a href="#experience" class="hover:text-primary transition-colors">Experience</a>
+<a href="#education" class="hover:text-primary transition-colors">Education</a>
+<a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+</div>
+<button class="md:hidden flex items-center" onclick="toggleMenu()">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden">
+<div class="px-2 pt-2 pb-3 space-y-1">
+<a href="#home" class="block px-3 py-2 hover:bg-gray-50">Home</a>
+<a href="#about" class="block px-3 py-2 hover:bg-gray-50">About</a>
+<a href="#skills" class="block px-3 py-2 hover:bg-gray-50">Skills</a>
+<a href="#achievements" class="block px-3 py-2 hover:bg-gray-50">Achievements</a>
+<a href="#projects" class="block px-3 py-2 hover:bg-gray-50">Projects</a>
+<a href="#experience" class="block px-3 py-2 hover:bg-gray-50">Experience</a>
+<a href="#education" class="block px-3 py-2 hover:bg-gray-50">Education</a>
+<a href="#contact" class="block px-3 py-2 hover:bg-gray-50">Contact</a>
+</div>
+</div>
+</nav>
+<section id="home" class="pt-24 pb-16 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('heroo.jpg');">
+<div class="absolute inset-0 bg-gradient-to-r from-white via-blue/80 to-transparent"></div>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<h1 class="text-5xl font-bold leading-tight">
+Hi, I'm Junaid Khan
+<span class="block text-primary mt-2">Web Developer</span>
+</h1>
+<p class="text-lg text-black-600">
+    Aspiring and enthusiastic fresher seeking a challenging role to utilize my knowledge and skills effectively. Eager
+    to contribute to organizational success while gaining hands-on experience and enhancing my expertise.
+    Committed to continuous learning and professional growth.
+</p>
+<div class="flex space-x-4">
+<a href="#projects" class="inline-flex items-center px-6 py-3 bg-primary text-white !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+View Projects
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+<a href="#contact" class="inline-flex items-center px-6 py-3 border border-primary text-primary !rounded-button hover:bg-primary/5 transition-colors whitespace-nowrap">
+Contact Me
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<u><h2 class="text-3xl font-bold text-center mb-12">About Me</h2></u>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="relative aspect-square rounded-lg overflow-hidden shadow-lg">
+<img src="pic1.jpg"
+alt="Junaid Khan"
+class="w-full h-full object-cover">
+</div>
+<div class="space-y-6">
+<p class="text-lg">
+A proficient web developer with expertise in HTML, CSS, and JavaScript. 
+During a one-month internship at companies such as Oasis Infobyte and Bharat Intern, 
+I possess a strong aptitude for problem-solving and a meticulous attention to detail, enabling me to craft user-friendly web experiences. 
+I am deeply passionate about acquiring new technologies and eagerly seek opportunities to further enhance my abilities while contributing to impactful web projects.
+Looking ahead, I am actively pursuing Web Developer roles within esteemed organizations to expand my knowledge and advance my career. 
+I am wholeheartedly committed to participating in projects that push the boundaries of web development and yield meaningful outcomes.
+</p>
+<div class="space-y-4">
+<div class="flex items-center space-x-4">
+<i class="ri-map-pin-line text-primary"></i>
+<span >Based in <a href="https://www.google.com/maps/place/Dehradun,+Uttarakhand/@30.3256215,77.8523171,11z/data=!3m1!4b1!4m6!3m5!1s0x390929c356c888af:0x4c3562c032518799!8m2!3d30.3164945!4d78.0321918!16zL20vMDRiejJm?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600">Dehradun, Uttarakhand, India</span></a>
+</div>
+<div class="flex items-center space-x-4">
+<i class="ri-briefcase-line text-primary"></i>
+<span>Web Developer </span>
+</div>
+<div class="flex items-center space-x-4">
+<i class="ri-graduation-cap-line text-primary"></i>
+<span>Bachelor of Computer Application,<a href="https://tulas.edu.in/" target="_blank" class="text-blue-600"> Tula's Institute</span></a>
+</div>
+</div>
+<div class="flex space-x-4">
+<a href="https://drive.google.com/file/d/1KnL3PyHpLibJLy0HOfCXKyQhCJCNzOmu/view?usp=drive_link" target="_blank" class="inline-flex items-center px-6 py-3 bg-primary text-white !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Download Resume
+<i class="ri-download-line ml-2"></i>
+</a>
+<a href="https://drive.google.com/drive/folders/1V4am7oWGvqFI-2YKOttazmMS02cfiukI?usp=drive_link" target="_blank" class="inline-flex items-center px-6 py-3 border border-primary text-primary !rounded-button hover:bg-primary/5 transition-colors whitespace-nowrap">
+Download Certificates
+<i class="ri-download-line ml-2"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="skills" class="py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<u><h2 class="text-3xl font-bold text-center mb-12">Skills & Expertise</h2></u>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="space-y-6">
+<h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center space-x-3">
+<i class="ri-javascript-line text-primary text-xl"></i>
+<span>JavaScript</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center space-x-3">
+<i class="ri-html5-line text-primary text-xl"></i>
+<span>HTML/CSS</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center space-x-3">
+<i class="ri-database-2-line text-primary text-xl"></i>
+<span>MySQL</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center space-x-3">
+<i class="ri-code-s-slash-line text-primary text-xl"></i>
+<span>Python</span>
+</div>
+</div>
+</div>
+<h3 class="text-xl font-semibold mb-4 mt-8">Soft Skills</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center space-x-3">
+<i class="ri-lightbulb-line text-primary text-xl"></i>
+<span>Innovative</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center space-x-3">
+<i class="ri-brain-line text-primary text-xl"></i>
+<span>Analytical Thinking</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center space-x-3">
+<i class="ri-speed-line text-primary text-xl"></i>
+<span>Quick Adaptability</span>
+</div>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center space-x-3">
+<i class="ri-puzzle-line text-primary text-xl"></i>
+<span>Problem-Solver</span>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="text-xl font-semibold mb-4">Tools & Technologies</h3>
+<div class="grid grid-cols-4 gap-4">
+<div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<i class="ri-html5-line text-2xl mb-2"></i>
+<span class="text-sm">HTML</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<i class="ri-css3-line text-2xl mb-2"></i>
+<span class="text-sm">CSS</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<i class="ri-javascript-line text-2xl mb-2"></i>
+<span class="text-sm">JavaScript</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<i class="ri-database-2-line text-2xl mb-2"></i>
+<span class="text-sm">SQL</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<i class="ri-github-line text-2xl mb-2"></i>
+<span class="text-sm">GitHub</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<i class="ri-terminal-box-line text-2xl mb-2"></i>
+<span class="text-sm">VS Code</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<i class="ri-file-office-line text-2xl mb-2"></i>
+<span class="text-sm">MS Office</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<i class="ri-git-branch-line text-2xl mb-2"></i>
+<span class="text-sm">Git</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<i class="ri-robot-line text-2xl mb-2"></i>
+<span class="text-sm">ChatGPT</span>
+</div>
+<div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<i class="ri-ai-generate text-2xl mb-2"></i>
+<span class="text-sm">Gemini</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="achievements" class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<u><h2 class="text-3xl font-bold text-center mb-12">Certificates & Achievements</h2></u>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="relative aspect-square rounded-full overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+<img src="pic2.jpg"
+alt="Junaid Khan"
+class="w-full h-full object-cover">
+</div>
+<div class="space-y-6">
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+<ul class="list-disc list-inside text-gray-600 space-y-4">
+<li class="flex items-start">
+<i class="ri-award-line text-primary text-xl mr-3 mt-0.5"></i>
+<span>AccentureTechnology Apprenticeship on Forage.  <a href="https://drive.google.com/file/d/1H6PPkAaACrCw1OX7CtqhoKLenhecPKuJ/view?usp=drive_link" target="_blank"  class="text-blue-600">Link</a></span>
+</li>
+<li class="flex items-start">
+<i class="ri-award-line text-primary text-xl mr-3 mt-0.5"></i>
+<span>AWS Solution Architecture Job Simulation on Forage. <a href="https://drive.google.com/file/d/1E7LGYB5o24V3tNK9X-0shPG-ahoYbRft/view?usp=drive_link" target="_blank" class="text-blue-600">Link</a></span>
+</li>
+<li class="flex items-start">
+<i class="ri-award-line text-primary text-xl mr-3 mt-0.5"></i>
+<span>TCS ION Communication Skills Course. <a href="https://drive.google.com/file/d/1RNLukmHujQUP0-nh3KmvyM9YoMf04Iy-/view?usp=drive_link" target="_blank" class="text-blue-600">Link</a></span>
+</li>
+<li class="flex items-start">
+<i class="ri-award-line text-primary text-xl mr-3 mt-0.5"></i>
+<span>WordPress add on Certification. <a href="https://drive.google.com/file/d/11tKEyR0l70VAnsM0iFuqQJRIDRmo2Zhg/view?usp=drive_link" target="_blank" class="text-blue-600">Link</a></span>
+</li>
+<li class="flex items-start">
+<i class="ri-award-line text-primary text-xl mr-3 mt-0.5"></i>
+<span>Oasis Infobyte Appreciation Certificate. <a href="https://drive.google.com/file/d/17mv66fHtw2esuq2BDIlMK1dotFf2isPA/view?usp=drive_link" target="_blank" class="text-blue-600">Link</a></span>
+</li>
+<li class="flex items-start">
+<i class="ri-award-line text-primary text-xl mr-3 mt-0.5"></i>
+<span>Bharat Intern Completion Certificate. <a href="https://drive.google.com/file/d/1AmdYGst8fNDOVHxqEpu9_tR2BdmTrZ1k/view?usp=drive_link" target="_blank" class="text-blue-600">Link</a></span>
+</li>
+<li class="flex items-start">
+<i class="ri-award-line text-primary text-xl mr-3 mt-0.5"></i>
+<span>OSIB Completion Certificate. <a href="https://drive.google.com/file/d/1P1DeeafT_t80jale_edZk5pSUJgOu7Y4/view?usp=drive_link" target="_blank" class="text-blue-600">Link</a></span>
+</li>
+<li class="flex items-start">
+<i class="ri-award-line text-primary text-xl mr-3 mt-0.5"></i>
+<span>IEEE award for outstanding contributions and innovative ideas in promoting national energy conservation initiatives.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects" class="py-16 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<u><h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2></u>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<a href="https://github.com/junaidkhan-2022/Amazon-Clone.git" target="_blank">
+<img src="https://public.readdy.ai/ai/img_res/2d8fda68aac2ea17089fc7780faa819d.jpg"
+alt="Amazon Clone"
+class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Amazon Clone</h3></a>
+<p class="text-gray-600 mb-4">Full-stack e-commerce solution with HTML and CSS</p>
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">HTML5</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">CSS3</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<a href="https://github.com/junaidkhan-2022/Currency-Converter.git" target="_blank">
+<img src="https://public.readdy.ai/ai/img_res/eb40a02d233157c8a7f3c4c7eb36af2a.jpg"
+alt="Currency Converter"
+class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Currency Converter</h3></a>
+<p class="text-gray-600 mb-4">Real-time currency conversion using Exchange Rates API, featuring live rates for 170+ currencies</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">HTML</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">CSS</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">JavaScript</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">REST API</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<a href="#" target="_blank">
+<img src="https://public.readdy.ai/ai/img_res/49a64bf39e15f348c474b47b76798490.jpg"
+alt="E-commerce Website"
+class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">E-commerce Website</h3></a>
+<p class="text-gray-600 mb-4">Full-featured online store with shopping cart, payment integration and admin dashboard</p>
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">HTML/CSS</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">JavaScript</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">MySQL</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<a href="https://github.com/junaidkhan-2022/C-Quiz-Game.git" target="_blank">
+<img src="https://public.readdy.ai/ai/img_res/3c0680cbb9dd613041be7ec8bfcf25b4.jpg"
+alt="Quiz Game"
+class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Quiz Game</h3></a>
+<p class="text-gray-600 mb-4">Interactive quiz game with multiple categories and difficulty levels</p>
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">C Programming</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<a href="https://github.com/junaidkhan-2022/Rock-Paper-Scissors-Game.git" target="_blank">
+<img src="https://public.readdy.ai/ai/img_res/ee9d1428e85edbad05495a5c84b2a850.jpg"
+alt="Rock Paper Scissors"
+class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Rock Paper Scissors</h3></a>
+<p class="text-gray-600 mb-4">Interactive game with animations and score tracking</p>
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">JavaScript</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">CSS3</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+<a href="https://github.com/junaidkhan-2022/Tic-Tac-Toe-Game.git" target="_blank">
+<img src="https://public.readdy.ai/ai/img_res/c67eef13041820e26094cd173e73b6ac.jpg"
+alt="Tic Tac Toe Game"
+class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Tic Tac Toe Game</h3></a>
+<p class="text-gray-600 mb-4">Interactive game with multiplayer mode</p>
+<div class="flex space-x-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">JavaScript</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded-full">HTML5</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="experience" class="py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<u><h2 class="text-3xl font-bold text-center mb-12">Work Experience</h2></u>
+<div class="space-y-8">
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-4">
+<div>
+<h3 class="text-xl font-semibold">Web Developer</h3>
+<a href="https://oasisinfobyte.com/" target="_blank"><p class="text-primary">Oasis Infobyte</p></a>
+</div>
+<span class="text-gray-500">March 2024 - April 2024</span>
+</div>
+<ul class="list-disc list-inside text-gray-600 space-y-2">
+<li>Developed and designed responsive websites, including a landing page and a portfolio website, enhancing user experience with clean layouts and functional designs</li>
+<li>Created a temperature converter web application using HTML, CSS, and JavaScript, allowing users to easily convert between Celsius, Fahrenheit, and Kelvin</li>
+</ul>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-4">
+<div>
+<h3 class="text-xl font-semibold">Web Developer</h3>
+<a href="https://bharatintern.live/" target="_blank"><p class="text-primary">Bharat Intern</p></a>
+</div>
+<span class="text-gray-500">March 2024 - April 2024</span>
+</div>
+<ul class="list-disc list-inside text-gray-600 space-y-2">
+<li>Designed and developed a responsive portfolio website, showcasing web development skills and projects using HTML, CSS, and JavaScript</li>
+<li>A dynamic weather website that fetched real-time weather data from APIs, displaying forecasts for various locations</li>
+<li>Ensured cross-browser compatibility, mobile responsiveness, and SEO optimization to improve visibility and accessibility</li>
+<li>Applied error handling mechanisms for API requests, enhancing reliability and user experience</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="education" class="py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<u><h2 class="text-3xl font-bold text-center mb-12">Education</h2></u>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="relative aspect-square rounded-full overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+<img src="pic3.jpg"
+alt="Junaid Khan"
+class="w-full h-full object-cover">
+</div>
+<div class="space-y-6">
+<div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+<div class="space-y-6">
+<div class="flex items-start">
+<i class="ri-graduation-cap-line text-primary text-xl mr-3 mt-1"></i>
+<div>
+<h3 class="text-lg font-semibold">Undergraduate (B.C.A)</h3>
+<a href="https://tulas.edu.in/" target="_blank"><p class="text-blue-600">Tula's Institute, Dehradun</p></a>
+<p class="text-gray-500">Percentage: 70/100</p>
+<p class="text-gray-500">2022 - Present</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="ri-graduation-cap-line text-primary text-xl mr-3 mt-1"></i>
+<div>
+<h3 class="text-lg font-semibold">Intermediate (CBSE)</h3>
+<a href="https://www.navyugvidyalaya.org/" target="_blank"><p class="text-blue-600">Navyug Vidyalaya, Bhagalpur</p></a>
+<p class="text-gray-500">Percentage: 83.4/100</p>
+<p class="text-gray-500">2022</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="ri-graduation-cap-line text-primary text-xl mr-3 mt-1"></i>
+<div>
+<h3 class="text-lg font-semibold">High School (CBSE)</h3>
+<a href="https://disbhagalpur.com/" target="_blank"><p class="text-blue-600">Diksha International, Bhagalpur</p></a>
+<p class="text-gray-500">Percentage: 64.4/100</p>
+<p class="text-gray-500">2020</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-16 bg-gray-50">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+<u><h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2></u>
+<form id="contact-form" class="space-y-6" name="submit-to-google-sheet">
+<div>
+<label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+<input type="text" id="name" name="name" required
+class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+</div>
+<div>
+<label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+<input type="email" id="email" name="email" required
+class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary">
+</div>
+<div>
+<label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+<textarea id="message" name="message" rows="4" required
+class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"></textarea>
+</div>
+<button type="submit" class="w-full px-6 py-3 bg-primary text-white !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Send Message
+</button>
+</form>
+<span id="msg" class="block text-center font-medium text-green-700 mb-1 px-6 py-4"></span>
+</div>
+</section>
+<footer class="bg-gray-900 text-white py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-3 gap-8">
+<div>
+<h3 class="text-lg font-['Pacifico'] mb-6 text-white-200">Junaid Khan</h3>
+<p class="text-gray-400">“I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.”</p>
+<p class="text-gray-400">-Bill Gates</p>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+<li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+
+<div>
+    <h4 class="text-lg font-semibold mb-4">Quick Contact</h4>
+    <ul class="space-y-1">
+    <li><a href="#jkhan40523@gmail.com" class="text-gray-400 hover:text-white transition-colors">jkhan40523@gmail.com</a></li>
+    <li><a href="#+91 8340144693" class="text-gray-400 hover:text-white transition-colors"> (+91) 8340144693</a></li>
+    <h4 class="text-lg font-semibold mb-10  px-3 py-0">Connect</h4>
+<div class="flex space-x-4">
+<a href="https://github.com/junaidkhan-2022"  target="_blank" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-github-fill text-2xl"></i>
+</a>
+<a href="https://www.linkedin.com/in/junaid-khan-722076266/" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-linkedin-fill text-2xl"></i>
+</a>
+</a> 
+<a href="https://x.com/JunaidKhan8501" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+<i class="ri-twitter-fill text-2xl"></i>
+</a>
+    </ul>
+    </div>
+<div>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-500 mt-8 pt-4 text-center text-gray-400">
+<p>&copy; 2025 Junaid Khan. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbza6lE_gy0m-YFZZkGGIk6qKEJRxgczPetiIQz4c-S33ABvTWiGAUDK8AACc9W01NpMzQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+                                        const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    
+function toggleMenu() {
+const menu = document.getElementById('mobile-menu');
+menu.classList.toggle('hidden');
+}
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+target.scrollIntoView({
+behavior: 'smooth'
+});
+const mobileMenu = document.getElementById('mobile-menu');
+if (!mobileMenu.classList.contains('hidden')) {
+toggleMenu();
+}
+}
+});
+});
+});
+    
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- ========================STORAGE===============================STORAGE=====================================STORAGE==================  -->
+
+<!-- ==============================JS CODE ===========================JS CODE=================================JS CODE======================== -->
+
+
+
+
+
+<!-- <script>
+function toggleMenu() {
+const menu = document.getElementById('mobile-menu');
+menu.classList.toggle('hidden');
+}
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+e.preventDefault();
+const email = document.getElementById('email').value;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(email)) {
+showNotification('Please enter a valid email address', 'error');
+return;
+}
+showNotification('Message sent successfully!', 'success');
+this.reset();
+});
+function showNotification(message, type) {
+const notification = document.createElement('div');
+notification.className = `fixed top-4 right-4 px-6 py-3 rounded-lg text-white ${type === 'error' ? 'bg-red-500' : 'bg-green-500'} transition-opacity duration-300`;
+notification.textContent = message;
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.style.opacity = '0';
+setTimeout(() => notification.remove(), 300);
+}, 3000);
+}
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+target.scrollIntoView({
+behavior: 'smooth'
+});
+const mobileMenu = document.getElementById('mobile-menu');
+if (!mobileMenu.classList.contains('hidden')) {
+toggleMenu();
+}
+}
+});
+});
+});
+</script> -->
